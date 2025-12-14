@@ -1,8 +1,25 @@
+I deployed it on Github Pages. I wanted my index.html so I used that one. It justs shows the RetroArch menu instead of playing the game. Could it be a .gitignore problem?
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Tetris - Pirate</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #game {
+      width: 640px;
+      height: 480px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 </head>
 <body>
 
@@ -16,6 +33,7 @@
   // Paste your Base64 string here
   EJS_gameUrl = "BlockPuzzle(1.0).nes"
   EJS_pathtodata = "data/";
+Ignore the dots. The entire Base64 is too long to paste here, so I truncated it. 
 </script>
 
 <!-- Load EmulatorJS -->
